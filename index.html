@@ -24,39 +24,23 @@ body{
   margin-top: 45%;
   margin-bottom: 10%;
 }
-.text-section{
-  color: #333;
-  background-color: #FFF;
-  margin-bottom: 5%;
-}
-.header-text{
-  font-size: 34px;
-}
 p {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 24px;
 }
-.project-box {
-  height: 240px;
-  color: #333;
-}
-#quotable{
-  background-color: #F9F9F9;
-  color: #333;
-  display: block;
-  z-index: 10;
-}
-#lage{
-  color: #333;
-  background-color: #F9F9F9;
-  display:block;
-}
 .content{
-  border: 1px solid #e0e0e0;
+  font-family: Times New Roman;
+  color: #333;
+  font-size: 48px;
   margin-left: 10%;
   margin-right: 10%;
 }
+
+a:link  {color:#0074D9; background-color:transparent}
+a:visited {color:#0074D9; background-color:transparent}
+a:hover   {color:#0074D9; background-color:transparent}
+a:active  {color:#0074D9; background-color:transparent}
 </style>
 </head>
 
@@ -66,32 +50,25 @@ p {
   <div class='head'>C A L L B A C K C U L T U R E</div>
 </center>
 <div class="content">
-  <div class='text-section'>
-    <center><p class="header-text">a collective of designers and developers making a cooler web</p></center>
-    <p>callback culture presents the following software and programs for your use</p>
-  </div>
-  <div class='project-box' id="quotable">
-    <center>quotable</center>
-    <center><p>An app that helps you remember the funny quotes you and your friends hear.</p></center>
-  </div>
-  <div class='project-box' id="lage">
-    <center>lage.js</center>
-    <center><p>Tiny client-side location tracking for analytics.</p> </center>
-  </div>
-  <div class='text-section'>
-    <p>
-      callback culture is a project by Andrew Nissen and many others
-    </p>
-  </div>
+  <center>
+    <div id="intro">
+      <p>We design and develop software we think is cool. That's it. Some of it is below.</p>
+      <br>
+      <br>
+    </div>
+  </center>
+  <center>
+    <div id="quotable">
+      <a href="http://quotable.meteor.com">quotable</a>
+      <br>
+      <p>An app that helps you remember the funny things you and your friends hear.</p>
+    </div>
+    <div id="lage">
+      <br>
+      <a href="http://github.com/adnissen/lage">lage.js</a>
+      <br>
+      <p>Tiny client-side location tracking for everyone.</p>
+    </div>
+  </center>
 </div>
 </body>
-
-<script>
-document.getElementById('quotable').addEventListener('click', function(){
-  window.location.href = "http://quotable.meteor.com";
-});
-document.getElementById('lage').addEventListener('click', function(){
-  window.location.href = "http://github.com/adnissen/lage";
-});
-
-</script>
